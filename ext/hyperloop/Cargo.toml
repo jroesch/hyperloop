@@ -1,0 +1,14 @@
+[package]
+name = "hyperloop"
+version = "0.1.0"
+authors = ["Jared Roesch <roeschinc@gmail.com>"]
+
+[lib]
+name = "hyperloop"
+crate-type = ["dylib"]
+
+[dependencies]
+mio = "0.3.0"
+
+[dependencies.tarnish]
+git = "https://github.com/jroesch/tarnish.git"

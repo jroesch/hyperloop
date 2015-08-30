@@ -1,5 +1,8 @@
 require "hyperloop/version"
+require "hyperloop/hyperloop"
 
 module Hyperloop
-  # Your code goes here...
+    def ruby_method
+        puts "this method came from ruby"
+    end
 end
