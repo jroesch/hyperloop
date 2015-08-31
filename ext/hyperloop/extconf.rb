@@ -7,7 +7,6 @@ require 'pry'
 find_executable('rustc')
 find_executable('cargo')
 
-
 # Not portable, blah, blah, blah, just a demo for now.
 shared_lib_path = File.join(
     Dir.pwd,
@@ -15,7 +14,6 @@ shared_lib_path = File.join(
     'hyperloop.' + RbConfig::CONFIG['DLEXT'])
 
 `cargo build`
-binding.pry
 `cp target/debug/libhyperloop.dylib #{shared_lib_path}`
 
 $makefile_created = true

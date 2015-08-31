@@ -9,6 +9,7 @@ crate-type = ["dylib"]
 
 [dependencies]
 mio = "0.3.0"
+libc = "*"
 
 [dependencies.tarnish]
 git = "https://github.com/jroesch/tarnish.git"
